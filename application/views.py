@@ -1,5 +1,5 @@
 from application import app, db 
-from flask import Flask, redirect, render_template, request, url_for,redirect, flash
+from flask import render_template, request
 from application.encrypter.models import Ciphertext
 from twofish import Twofish
 import binascii
