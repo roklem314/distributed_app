@@ -1,5 +1,7 @@
-from application import app, db 
+from application import app
+from application import db 
 from flask import render_template, request
+from application.encrypter import models
 from application.encrypter.models import Ciphertext
 from twofish import Twofish
 import binascii

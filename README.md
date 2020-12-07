@@ -2,6 +2,7 @@
 DAp is encrypted for encrypt text . 
 No registration needed. 
 No adds.
+Link to Herokuapp: https://twofishencrypter.herokuapp.com
 
 How to locally debloy this project:
 1. clone this project
