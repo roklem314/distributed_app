@@ -12,6 +12,7 @@ if os.environ.get("HEROKU"): #running at HEROKU
     app.config["SECRET_KEY"] = secrets.token_bytes(42)
     app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
     #app.config["DATABASE_URL"] = psycopg2.connect("DATABASE_URL", sslmode='require')
+    conn = psycopg2.connect("DATABASE_URL", sslmode='require')
     app.config["SQLALCHEMY_ECHO"] = False
 
 else: #running at LOCALHOST
