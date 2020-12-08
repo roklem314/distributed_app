@@ -1,7 +1,5 @@
 # Distributed application (DAp)
-DAp is encrypted for encrypt text . 
-No registration needed. 
-No adds.
+No registration needed. No adds.
 Link to Heroku app: https://twofishencrypter.herokuapp.com
 
 How to locally debloy this project:
