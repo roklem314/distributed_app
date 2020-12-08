@@ -6,7 +6,7 @@ Link to Heroku app: https://twofishencrypter.herokuapp.com
 
 How to locally debloy this project:
 1. clone this project
-2. extract zip file and go to project folder "Distr_App" and open terminal
+2. extract zip file and go to project folder "distributed_app" and open terminal
 3. echoose good editor like Visual Studio Code or similar, open project 
 4. on terminal give command: python3 –m venv venv
     --> this will create virtual environment
