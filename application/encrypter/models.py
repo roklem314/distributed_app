@@ -7,9 +7,11 @@ class Ciphertext(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     date_created = db.Column(db.DateTime, default=db.func.current_timestamp())
     ciphertext = db.Column(db.String())
+    key = db.Column(db.String())
 
-    def __init__(self,ciphertext):
+    def __init__(self,ciphertext,key):
         self.ciphertext = ciphertext
+        self.key = key
 
     def __repr__(self):
-        return '<id {}>'.format(self.id)
+        return self.id

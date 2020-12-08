@@ -4,6 +4,7 @@ from flask import render_template, request
 from application.encrypter import models
 from application.encrypter.models import Ciphertext
 from twofish import Twofish
+from application.encrypter.randomkey import generator2, hex_to_binary
 import binascii
 import random
 import string
@@ -13,8 +14,8 @@ import string
  #def info(uid: int):
 def index():
     if request.method == 'POST':
-        key = binascii.unhexlify('8CACBE276491F6FF4B1EC0E9CFD52E76')
-        T = Twofish(key)
+        gener_key = generator2()
+        T = Twofish(gener_key)
         plaintext = request.form['plaintext']
         plaintext_original = request.form['plaintext']
         if (len(plaintext) < 16 ):
@@ -22,7 +23,9 @@ def index():
                 plaintext = plaintext + random.choice(string.ascii_letters)
         if (len(plaintext) == 16 ):
             chipertext = T.encrypt(bytes(plaintext, 'utf-8'))
-            new_chipertext= Ciphertext(chipertext)
+            new_chipertext= Ciphertext(chipertext,gener_key)
+            #new_key = Ciphertext(hex_to_binary(gener_key))
+            #db.session().add(new_chipertext)
             db.session().add(new_chipertext)
             db.session().commit()
             result = chipertext.decode('utf-8','ignore')
