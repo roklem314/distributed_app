@@ -1,11 +1,11 @@
 # TwoFish application(TFA)
-No registration needed. No adds.
-This project is part of one assignment on the course Distributed Systems.
-Link to Heroku app: https://twofishencrypter.herokuapp.com
+No registration needed. No adds.\
+This project is part of one assignment on the course Distributed Systems.\
+Link to Heroku app: https://twofishencrypter.herokuapp.com.
 
-1. Clone this project to the local machine
-2. Extract the zip file and go to the project folder "distributed_app" and the open terminal (on Windows command prompt or similar) .
-3 .Choose your favorite editor like Visual Studio Code or similar, open the project file.
+1. Clone this project to the local machine.
+2. Extract the zip file and go to the project folder "distributed_app" and the open terminal (on Windows command prompt or similar).
+3. Choose your favorite editor like Visual Studio Code or similar, open the project file.
 4. On the terminal, give the command: python3 –m venv venv --> this will create a virtual environment.
 5. On terminal give command "source venv/bin/activate" --> this will activate virtual environment
 6. Install dependencies --> give command: pip install –r requirements.txt
