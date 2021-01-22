@@ -1,5 +1,6 @@
-# Distributed application (DAp)
+# TwoFish application(TFA)
 No registration needed. No adds.
+This project is part of one assignment on the course Distributed Systems.
 Link to Heroku app: https://twofishencrypter.herokuapp.com
 
 1. Clone this project to the local machine
